@@ -57,6 +57,7 @@ def main(mode='test', question=None, answers=None):
         predict_model.load_weights('model/cnnlastm_predict_weights_epoch_1.h5')
 
         c = 0
+        c1 = 0
         for i, d in enumerate(data):
             print (i, len(data))
 
@@ -71,9 +72,12 @@ def main(mode='test', question=None, answers=None):
             max_n = np.argmax(sims[:n_good])
             r = rankdata(sims, method='max')
             c += 1 if max_r == max_n else 0
+            c1 += 1 / float(r[max_r] - r[max_n] + 1)
 
         precision = c / float(len(data))
+        mrr = c1 / float(len(data))
         print ("Precision", precision)
+        print ("MRR", mrr)
     elif mode == 'test':
         # question and answers come from params
         qa_data = QAData()
