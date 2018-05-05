@@ -4,19 +4,6 @@ from urllib.parse import parse_qs
 from qa import test
 
 class S(SimpleHTTPRequestHandler):
-    """
-    def _set_headers(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'text/html')
-        self.end_headers()
-
-    def do_GET(self):
-        self._set_headers()
-        return SimpleHTTPRequestHandler.do_GET(self)
-
-    def do_HEAD(self):
-        self._set_headers()
-    """
 
     def do_POST(self):
         print( "incomming http: ", self.path )
