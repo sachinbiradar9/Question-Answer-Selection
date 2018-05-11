@@ -8,4 +8,4 @@ Deep Learning framework to select best answer for a question from an answer cand
 
 This basic biLSTM model was extended to define a more composite representation for questions and answers by combining convolutional neural network(CNN) on top of biLSTM.
 
-![biLSTM-CNN model](/images/biLSTM/CNN.png)
+![biLSTM-CNN model](/images/biLSTM-CNN.png)
