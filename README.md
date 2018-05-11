@@ -1,7 +1,4 @@
 # Question-Answering-System
-Dataset : [InsuranceQA Corpus](https://github.com/shuzi/insuranceQA)  
-Paper : [LSTM-based Deep Learning Models for Non-factoid Answer Selection](https://arxiv.org/pdf/1511.04108v4.pdf)
-
 Deep Learning framework to select best answer for a question from an answer candidate pool, it does not depend on manually defined features or linguistic tools. The basic framework was to build the embeddings of questions and answers based on bidirectional long short-term memory(biLSTM) models, and measure their closeness by cosine similarity.
 
 <img src="/images/biLSTM.png" width="70%">
@@ -13,7 +10,8 @@ This basic biLSTM model was extended to define a more composite representation f
 ## Installation
 `pip3 install numpy`  
 `pip3 install keras`  
-`pip3 install scipy`
+`pip3 install scipy`  
+Dataset : [InsuranceQA Corpus](https://github.com/shuzi/insuranceQA)
 
 ## Usage
 Run the server - `sudo python3 server.py`  
