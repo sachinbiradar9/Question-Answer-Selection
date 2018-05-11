@@ -18,6 +18,6 @@ Run the server - `sudo python3 server.py`
 Open [localhost](http://localhost/)
 
 ## Credits
-- Plamen Petrov
+- Dr. Plamen Petrov
 - Ming Tan, Bing Xiang and Bowen Zhou. 2016. [_LSTM-based Deep Learning Models for non-factoid answer selection_](http://arxiv.org/abs/1511.04108)
 - Minwei Feng, Bing Xiang, Michael R. Glass, Lidan Wang, Bowen Zhou. 2015. [Applying Deep Learning to Answer Selection: A Study and An Open Task](https://arxiv.org/abs/1508.01585)
