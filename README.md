@@ -1,4 +1,4 @@
-# Question-Answer-Selection
+# Question Answer Selection
 Deep Learning framework to select best answer for a question from an answer candidate pool, it does not depend on manually defined features or linguistic tools. The basic framework was to build the embeddings of questions and answers based on bidirectional long short-term memory(biLSTM) models, and measure their closeness by cosine similarity.
 
 <img src="/images/biLSTM.png" width="70%">
